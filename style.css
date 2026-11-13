@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #654ea3);
+    color: white;
+}
+
+.game {
+    width: 90%;
+    max-width: 450px;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffd166;
+}
+
+.coin {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffe082, #d99b00);
+    border: 7px solid #fff0a6;
+    color: #513900;
+    font-size: 35px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 13px 22px;
+    margin: 7px;
+    border: none;
+    border-radius: 12px;
+    background: #ffd166;
+    color: #292044;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ffe7a0;
+}
+
+.reset {
+    background: #ff7890;
+    color: white;
+}
+
+#result {
+    min-height: 30px;
+}
+
+#score {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.flipping {
+    animation: flip 0.5s ease-in-out;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+        scale: 0.8;
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
